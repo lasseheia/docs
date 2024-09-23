@@ -7,6 +7,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
+    - content.code.copy
+    - content.code.select
 
   palette: 
 
