@@ -26,7 +26,10 @@ theme:
 
 plugins:
   - search
-  - blog
+  - blog:
+      blog_dir: .
+      archive: false
+      categories: false
 
 repo_name: lasseheia/docs
 repo_url: https://github.com/lasseheia/docs
