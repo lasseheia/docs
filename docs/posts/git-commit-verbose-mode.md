@@ -8,15 +8,19 @@ categories:
 
 # Git Commit Verbose Mode
 
-To make it easier to remember exactly what changes are staged before writing a commit message, you can use the git commit --verbose command. This will show the diff of the changes you're about to commit in the editor where you write the commit message.
+To help you remember exactly which changes are staged before writing a commit message, you can use the `git commit --verbose` command. This will display the diff of the changes you're about to commit in the editor where you write your commit message.
 
 <!-- more -->
+
+## How to Use Git Commit Verbose Mode
 
 ```zsh
 git commit --verbose
 ```
 
-You can set this option as the default by running the following command:
+## Set Git Commit Verbose Mode as the Default
+
+You can set verbose mode as the default by running the following command:
 
 ```zsh
 git config --global commit.verbose true
@@ -35,9 +39,19 @@ Or, if you're using Home Manager:
 }
 ```
 
+## How to Override the Default
+
+If you want to override the default and skip verbose mode for a single commit, you can run the following command:
+
+```zsh
+git commit --no-verbose
+```
+
+## Example Output
+
 Here's an example of what the output might look like:
 
-```diff
+```diff hl_lines="11-55"
 :memo: (docs/posts): Create blog post about Git commit verbose mode
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
