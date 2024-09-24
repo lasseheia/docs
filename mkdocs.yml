@@ -42,3 +42,8 @@ markdown_extensions:
 
 repo_name: lasseheia/docs
 repo_url: https://github.com/lasseheia/docs
+
+extra:
+  analytics:
+    provider: google
+    property: G-DCS0HS66PZ
