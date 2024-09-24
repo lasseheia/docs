@@ -31,5 +31,14 @@ plugins:
       archive: false
       categories: false
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 repo_name: lasseheia/docs
 repo_url: https://github.com/lasseheia/docs
