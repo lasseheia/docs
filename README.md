@@ -4,6 +4,15 @@
 
 ## Local Development
 
+To run the MkDocs server locally, use the following command:
+
 ```zsh
-nix-shell --run "mkdocs serve"
+nix develop --command bash -c "mkdocs serve"
+```
+
+Or, using direnv:
+
+```zsh
+direnv allow
+mkdocs serve
 ```

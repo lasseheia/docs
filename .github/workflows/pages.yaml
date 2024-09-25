@@ -28,4 +28,4 @@ jobs:
 
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - run: nix-shell --run "mkdocs gh-deploy --force"
+      - run: nix develop --command bash -c "mkdocs gh-deploy --force"
